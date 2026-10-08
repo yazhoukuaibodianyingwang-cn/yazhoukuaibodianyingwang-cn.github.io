@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="亚洲快播电影网（yazhoukuaibodianyingwang-cn.github.io）是 0149 导航旗下亚洲电影快讯频道：快速播报亚洲新片、电影节、4K修复与导演动态。含快讯流、新片速递、节展日历、导演速写、深度影评、本周片单。倡导正版观看。">
+<meta name="keywords" content="亚洲快播电影网, 亚洲电影, 亚洲新片, 华语电影, 日本电影, 韩国电影, 伊朗电影, 东南亚电影, 电影节, 戛纳, 柏林, 威尼斯, 4K修复, 电影快讯, 电影片单, 电影影评, 0149导航, yazhoukuaibodianyingwang-cn">
+<meta name="author" content="亚洲快播电影网 · 0149 导航">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#e8f0ec">
+<title>亚洲快播电影网 - 亚洲电影快讯与片单｜0149 导航电影频道 | yazhoukuaibodianyingwang-cn.github.io</title>
+<link rel="canonical" href="https://yazhoukuaibodianyingwang-cn.github.io">
+<style>
+:root{
+  --bg:#e8f0ec; --paper:#f5f9f6; --card:#fffdf9;
+  --ink:#20302a; --ink2:#455752; --tx:#6c7a74;
+  --cel:#2f7a6c; --cel2:#e6f0ec;
+  --red:#c8433b; --red2:#f8e4e2;
+  --gold:#c08a30; --plum:#7a4f86; --teal:#1f8f8f;
+  --line:rgba(32,48,42,.18); --line2:rgba(32,48,42,.09);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.9;font-size:15.8px;
+  background-image:
+    radial-gradient(700px 380px at 90% -6%,rgba(200,67,59,.13),transparent 62%),
+    radial-gradient(600px 340px at 2% 22%,rgba(47,122,108,.13),transparent 64%);
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+.serif,h1,h2,h3{font-family:Georgia,"Songti SC","SimSun",serif}
+a{color:inherit;text-decoration:none;transition:.2s}
+ul,ol{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+::selection{background:var(--red);color:#fff}
+.alert{background:var(--ink);color:var(--paper);font-size:11.2px;letter-spacing:.9px;padding:10px 0;text-align:center;font-weight:600}
+.alert a{color:var(--gold);border-bottom:1px dotted var(--gold)}
+.ticker{overflow:hidden;border-bottom:2px solid var(--ink);padding:9px 0;font-size:9px;letter-spacing:2.4px;color:var(--tx);white-space:nowrap;font-weight:800;background:var(--paper)}
+.ticker span{display:inline-block;padding-left:2%;animation:t 60s linear infinite}
+@keyframes t{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker b{color:var(--red)}
+nav.gnb{position:sticky;top:0;z-index:100;background:rgba(232,240,236,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nrow{display:flex;align-items:center;height:64px;gap:2px}
+.logo{font-size:18px;font-weight:900;letter-spacing:1.1px;margin-right:8px;white-space:nowrap;display:flex;align-items:center;gap:8px;color:var(--ink)}
+.flash{width:20px;height:20px;background:var(--red);border-radius:3px;flex:0 0 20px;position:relative}
+.flash::after{content:"";position:absolute;inset:4px;border:2px solid #fff;border-radius:2px}
+.logo small{font-size:8.2px;letter-spacing:1.7px;color:var(--tx);font-weight:800;display:block;line-height:1.1;margin-top:2px}
+.nrow a{font-size:13px;padding:10px 8px;color:var(--ink2);font-weight:600;position:relative}
+.nrow a:hover{color:var(--red)}
+.nrow a::before{content:"";position:absolute;left:8px;right:8px;top:5px;height:5px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:.22s}
+.nrow a:hover::before{transform:scaleY(1)}
+.togg{display:none;background:none;border:none;color:var(--cel);font-size:25px;cursor:pointer;margin-left:auto;font-weight:900}
+.hero{padding:50px 0 16px;position:relative}
+.hg{display:grid;grid-template-columns:1fr 330px;gap:48px;align-items:center}
+.eyebrow{font-size:9px;letter-spacing:4.6px;color:var(--cel);font-weight:900}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.22;font-weight:900;margin:13px 0 15px;letter-spacing:.4px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{color:var(--tx);font-size:15.2px;margin-bottom:8px;text-align:justify}
+.hero p b{color:var(--ink);background:linear-gradient(transparent 62%,rgba(200,67,59,.24) 62%);padding:0 1px}
+.stats{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap;border-top:2px solid var(--ink);padding-top:16px}
+.stat .n{font-size:30px;font-weight:900;color:var(--red);line-height:1;font-family:Georgia,serif;letter-spacing:-.7px}
+.stat .l{font-size:9.4px;letter-spacing:1.6px;color:var(--tx);margin-top:4px;font-weight:800}
+.breaking{width:330px;margin-left:auto;border:2px solid var(--ink);background:var(--paper);position:relative;overflow:hidden}
+.bh{background:var(--red);color:#fff;font-size:9.2px;letter-spacing:2.8px;padding:8px 12px;font-weight:900;display:flex;justify-content:space-between}
+.bh a{color:#ffe9a8}
+.blist{height:276px;overflow:hidden;position:relative}
+.blist li{padding:11px 14px;border-bottom:1px dashed var(--line);font-size:12.4px;line-height:1.72;animation:bl 16s steps(6) infinite}
+@keyframes bl{from{transform:translateY(0)}to{transform:translateY(-100%)}}
+.blist li b{color:var(--red);font-size:8.6px;letter-spacing:1.2px;display:block;margin-bottom:2px}
+.blist li:hover{background:var(--cel2)}
+.bf{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,var(--paper) 40%,var(--paper));height:26px;pointer-events:none}
+section{padding:68px 0;position:relative}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.shl{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.st{font-size:clamp(19px,3.2vw,28px);font-weight:900;letter-spacing:1.3px;color:var(--ink);position:relative;padding-left:16px}
+.st::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:8px;background:var(--red)}
+.st i{font-style:normal;color:var(--gold)}
+.en{font-size:8.2px;letter-spacing:3.2px;color:var(--tx)}
+.ss{color:var(--tx);font-size:13.2px;max-width:760px;margin-top:9px;line-height:1.9}
+.chip{font-size:10.2px;padding:7px 12px;border:1px solid var(--line);color:var(--ink2);font-weight:700;letter-spacing:.5px;background:var(--card)}
+.feed{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:2px solid var(--ink);background:var(--ink)}
+.fd{background:var(--paper);padding:17px 22px 15px;position:relative;border-bottom:1px solid var(--line2);transition:.22s}
+.fd:hover{background:var(--cel2)}
+.fd .no{font-family:Georgia,serif;font-size:10px;font-weight:900;color:var(--red);letter-spacing:1.4px}
+.fd h4{font-size:15.4px;font-weight:900;line-height:1.5;margin:3px 0 6px;letter-spacing:.3px}
+.fd p{font-size:11.8px;color:var(--tx);line-height:1.82;text-align:justify}
+.fd .tag{font-size:8.4px;letter-spacing:1.2px;color:var(--cel);margin-top:8px;font-weight:900;display:flex;gap:8px;flex-wrap:wrap}
+.fd .tag b{color:var(--red);font-weight:900}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cd{background:var(--card);border:1px solid var(--line);overflow:hidden;transition:.26s;position:relative}
+.cd:hover{transform:translateY(-7px) rotate(-.6deg);box-shadow:0 12px 24px rgba(32,48,42,.16);z-index:2;border-color:var(--cel)}
+.cv{height:178px;position:relative;padding:12px;display:flex;flex-direction:column;justify-content:space-between;color:#fff}
+.cd:nth-child(1) .cv{background:linear-gradient(160deg,#7d3b44,#c8433b)}
+.cd:nth-child(2) .cv{background:linear-gradient(160deg,#1f5c53,#2f7a6c)}
+.cd:nth-child(3) .cv{background:linear-gradient(160deg,#5c4a2a,#c08a30)}
+.cd:nth-child(4) .cv{background:linear-gradient(160deg,#3f335e,#7a4f86)}
+.cv .ct{font-size:8.4px;letter-spacing:2.2px;font-weight:900;background:rgba(0,0,0,.26);padding:4px 8px;align-self:flex-start}
+.cv .sc{font-family:Georgia,serif;font-size:27px;font-weight:900;line-height:1;letter-spacing:-.6px;text-align:right}
+.cd .bd{padding:12px 14px 13px}
+.cd h4{font-size:14.2px;font-weight:900;line-height:1.5;letter-spacing:.3px}
+.cd .mi{font-size:11.2px;color:var(--tx);line-height:1.8;margin-top:6px;text-align:justify}
+.cd .ft{display:flex;justify-content:space-between;font-size:8.6px;letter-spacing:1.1px;color:var(--cel);margin-top:9px;padding-top:7px;border-top:1px dotted var(--line);font-weight:800}
+.cd .ft b{color:var(--red)}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.day{background:var(--card);border:1px solid var(--line);padding:16px 16px 14px;text-align:center;transition:.24s}
+.day:hover{border-color:var(--red);transform:translateY(-5px)}
+.day .d{font-family:Georgia,serif;font-size:30px;font-weight:900;color:var(--red);line-height:1;letter-spacing:-.7px}
+.day .m{font-size:8.6px;letter-spacing:2.6px;color:var(--tx);font-weight:900;margin-bottom:8px}
+.day h4{font-size:13.4px;font-weight:900;line-height:1.5;letter-spacing:.4px}
+.day p{font-size:11.2px;color:var(--tx);line-height:1.8;margin-top:6px;text-align:justify}
+.day .st2{height:5px;background:var(--bg);margin-top:10px;overflow:hidden}
+.day .st2 i{display:block;height:100%;background:linear-gradient(90deg,var(--cel),var(--teal))}
+.day:nth-child(2) .st2 i{background:linear-gradient(90deg,var(--red),var(--gold))}
+.day:nth-child(3) .st2 i{background:linear-gradient(90deg,var(--gold),var(--plum))}
+.day:nth-child(4) .st2 i{background:linear-gradient(90deg,var(--plum),var(--cel))}
+.tape{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 14px;scrollbar-width:thin;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.tape::-webkit-scrollbar{height:6px}
+.tape::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+.au{flex:0 0 262px;scroll-snap-align:start;padding:16px 18px;border-right:1px dashed var(--line);transition:.22s}
+.au:hover{background:var(--cel2)}
+.au .av{width:54px;height:54px;border-radius:50%;float:left;margin:2px 12px 6px 0}
+.au:nth-child(1) .av{background:radial-gradient(circle at 34% 30%,#e6b3b6,var(--red) 62%,#8a2c26)}
+.au:nth-child(2) .av{background:radial-gradient(circle at 34% 30%,#a9cfc8,var(--cel) 62%,#22574a)}
+.au:nth-child(3) .av{background:radial-gradient(circle at 34% 30%,#e6cf9c,var(--gold) 62%,#84601c)}
+.au:nth-child(4) .av{background:radial-gradient(circle at 34% 30%,#c7b4dd,var(--plum) 62%,#52365c)}
+.au:nth-child(5) .av{background:radial-gradient(circle at 34% 30%,#9dd8d8,var(--teal) 62%,#156666)}
+.au:nth-child(6) .av{background:radial-gradient(circle at 34% 30%,#c3cae0,#5c6f9c 62%,#3a4a70)}
+.au h4{font-size:14.6px;font-weight:900;letter-spacing:.5px;line-height:1.4}
+.au .ct{font-size:8.6px;letter-spacing:1.6px;color:var(--cel);font-weight:900;clear:both}
+.au p{font-size:11.4px;color:var(--tx);line-height:1.8;margin-top:7px;text-align:justify}
+.au .fl{font-size:8.4px;letter-spacing:.5px;color:var(--ink2);margin-top:8px;padding-top:7px;border-top:1px solid var(--line);display:block}
+.au .fl b{color:var(--red)}
+.paper{background:var(--paper);border:1px solid var(--line);padding:28px 30px;column-count:2;column-gap:38px;column-rule:1px solid var(--line)}
+.paper h3{column-span:all;font-size:clamp(20px,3.4vw,29px);font-weight:900;line-height:1.4;letter-spacing:.6px;margin-bottom:6px}
+.paper .sub{column-span:all;font-size:9.2px;letter-spacing:3px;color:var(--red);font-weight:900;margin-bottom:16px}
+.paper p{font-size:13.4px;color:var(--ink2);line-height:2.05;text-align:justify;margin-bottom:13px;orphans:3;widows:3}
+.paper p:first-of-type::first-letter{font-family:Georgia,serif;font-size:43px;font-weight:900;color:var(--red);float:left;line-height:.86;margin:4px 7px 0 0}
+.paper blockquote{border-left:4px solid var(--red);padding:6px 0 6px 14px;margin:0 0 14px;font-size:13.6px;color:var(--ink);font-weight:700;line-height:1.9}
+.paper .by{column-span:all;font-size:10.4px;letter-spacing:1.4px;color:var(--tx);text-align:right;border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
+.fold{display:grid;grid-template-columns:1.15fr 1fr;gap:0;border:2px solid var(--ink);background:var(--ink)}
+.fm{background:var(--red);color:#fff;padding:24px 26px;display:flex;flex-direction:column;justify-content:space-between;min-height:240px}
+.fm h4{font-size:22px;font-weight:900;line-height:1.4;letter-spacing:.6px}
+.fm p{font-size:12.4px;line-height:1.9;opacity:.94}
+.fm .kv{font-size:9.2px;letter-spacing:2.6px;font-weight:900;margin-top:14px;color:#ffe9a8}
+.fr{background:var(--paper);padding:6px 0}
+.fl2{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;padding:12px 22px;border-bottom:1px solid var(--line2);transition:.2s}
+.fl2:hover{background:var(--cel2)}
+.fl2 .no{font-family:Georgia,serif;font-size:17px;font-weight:900;color:var(--red)}
+.fl2 h5{font-size:13.8px;font-weight:900;line-height:1.45;letter-spacing:.3px}
+.fl2 .mi{font-size:10.8px;color:var(--tx);line-height:1.6}
+.fl2 .sc{font-family:Georgia,serif;font-size:15px;font-weight:900;color:var(--cel);white-space:nowrap}
+.foot{border-top:4px solid var(--ink);background:var(--cel2);padding:50px 0 18px;margin-top:10px}
+.fg{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:26px;margin-bottom:24px}
+.fc h5{font-size:8.8px;letter-spacing:3.2px;color:var(--cel);margin-bottom:12px;font-weight:900}
+.fc a{display:block;font-size:12.2px;color:var(--ink2);padding:5px 0}
+.fc a:hover{color:var(--red)}
+.about{font-size:12.2px;color:var(--tx);max-width:440px;margin-top:12px;text-align:justify;line-height:2}
+.copy{text-align:center;font-size:10.6px;color:var(--ink2);padding-top:18px;border-top:1px solid var(--line);line-height:2.2;letter-spacing:.4px}
+.copy a{color:var(--red);border-bottom:1px dotted var(--red);font-weight:700}
+.up{position:fixed;right:14px;bottom:16px;width:46px;height:46px;border-radius:3px;background:var(--red);color:#fff;display:grid;place-items:center;font-size:18px;font-weight:900;opacity:0;pointer-events:none;transition:.3s;z-index:99}
+.up.show{opacity:1;pointer-events:auto;box-shadow:0 0 18px rgba(200,67,59,.4)}
+@media(max-width:1040px){
+  .hg{grid-template-columns:1fr}
+  .breaking{width:100%;max-width:460px;margin:0 auto}
+  .feed,.cards,.cal,.fold,.paper{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .togg{display:block}
+  .nrow{position:fixed;inset:63px 0 0 0;background:var(--bg);flex-direction:column;padding:16px;transform:translateX(100%);transition:.32s;z-index:99;overflow:auto}
+  .nrow.open{transform:translateX(0)}
+  .nrow a{padding:13px 8px;font-size:15.2px;border-bottom:1px solid var(--line2);width:100%}
+  .hero{padding:26px 0 12px}
+  section{padding:42px 0}
+  .feed,.cards,.cal,.fold,.paper{grid-template-columns:1fr}
+  .paper{column-count:1;padding:20px}
+  .fm{min-height:auto;gap:14px}
+  .fl2{grid-template-columns:30px 1fr}
+  .fl2 .sc{grid-column:2}
+}
+@media print{
+  .alert,.ticker,nav.gnb,.up{display:none}
+  body{background:#fff;color:#000;font-size:10.5pt}
+  section{padding:9px 0;break-inside:avoid}
+  .cd,.day,.fd,.fl2,.fold,.paper{break-inside:avoid;border-color:#999}
+  .blist{height:auto;animation:none}
+  .blist li{animation:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="alert" role="note">
+  📡 <b>亚洲快播电影网</b>是 <b>0149 导航</b> 旗下<b>亚洲电影快讯频道</b>。"快播"意为<b>快速播报</b>：快讯 2 小时内成文，深度稿映后 72 小时内发布。本站<b>不做资源站、不挂盗链、不引导下载</b>，所有影片建议通过<b>电影院及合法授权平台</b>观看。
+</div>
+
+<div class="ticker" aria-hidden="true">
+  <span><b>LIVE</b> ｜ 亚洲快播电影网 · 0149 导航 ｜ 快讯流 · 新片速递 · 节展日历 · 导演速写 · 深度影评 · 本周片单 ｜ 戛纳 · 柏林 · 威尼斯 · 釜山 · 东京 · 金马 ｜ 华语 · 日本 · 韩国 · 伊朗 · 东南亚</span>
+</div>
+
+<nav class="gnb" aria-label="主导航">
+  <div class="wrap nrow" id="links">
+    <a class="logo" href="#top"><span class="flash" aria-hidden="true"></span>亚洲快播电影网<small>0149 导航 · 亚洲电影快讯</small></a>
+    <a href="#feed">快讯流</a>
+    <a href="#now">新片速递</a>
+    <a href="#cal">节展日历</a>
+    <a href="#auteur">导演速写</a>
+    <a href="#long">深度影评</a>
+    <a href="#pick">本周片单</a>
+    <a href="#about">关于快播</a>
+  </div>
+  <button class="togg" id="togg" aria-label="菜单" aria-expanded="false">☰</button>
+</nav>
+
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap hg">
+    <div>
+      <div class="eyebrow">ASIA FILM FLASH · SINCE 0149</div>
+      <h1>亚洲电影的<br><em>速度与温度</em>。</h1>
+      <p>快讯 2 小时内成文，深度稿映后 72 小时内发布。我们不追热搜，只追<b>放映厅的灯光</b>：戛纳、柏林、威尼斯、釜山、东京、金马，以及那些没有红毯、但值得被看见的亚洲新片。</p>
+      <p>覆盖<b>华语、日本、韩国、伊朗、东南亚</b>五条脉络，含<b>4K 修复</b>、<b>作者电影</b>、<b>类型片复兴</b>与<b>短片与纪录片</b>。片单按"0149 个情绪标签"分类，输入心情，出一片单。</p>
+      <div class="stats">
+        <div class="stat"><div class="n">0149</div><div class="l">条快讯 / 年</div></div>
+        <div class="stat"><div class="n">62</div><div class="l">部新片 · 已评</div></div>
+        <div class="stat"><div class="n">6</div><div class="l">大电影节</div></div>
+        <div class="stat"><div class="n">86.4</div><div class="l">全站均分</div></div>
+      </div>
+    </div>
+
+    <aside class="breaking" aria-label="实时快讯">
+      <div class="bh"><span>BREAKING · 快讯</span><a href="#feed">全部 ›</a></div>
+      <ul class="blist">
+        <li><b>14:02 · 戛纳</b>《默视》获评审团大奖，导演当场落泪，法语发言 47 秒。</li>
+        <li><b>11:38 · 修复</b>《东京物语》4K 修复版内地定档 11 月 8 日，首周仅 12 城。</li>
+        <li><b>09:15 · 韩国</b>釜山电影节公布"亚洲电影贡献奖"，授予剪辑师李美珠。</li>
+        <li><b>昨日 · 华语</b>《秋日来信》宣布撤档，制片方称"档期不合适"。</li>
+        <li><b>昨日 · 伊朗</b>《苹果树下》获东京电影节最佳影片，票房仅 3 万里亚尔。</li>
+        <li><b>前日 · 日本</b>是枝裕和新片开机，主演：役所广司、长泽雅美。</li>
+      </ul>
+      <div class="bf"></div>
+    </aside>
+  </div>
+</section>
+
+<section id="feed" aria-labelledby="t-feed">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>01</i>快讯流</h2><span class="en">Flash Feed</span></div>
+        <p class="ss">快讯的尺子是<b>时间</b>，不是流量。每条标注发布时刻，按"事实 / 解读 / 我的看法"三段写。</p>
+      </div>
+      <a class="chip" href="#">订阅快讯邮件 ›</a>
+    </div>
+    <div class="feed">
+      <article class="fd" tabindex="0"><div class="no">№ 0149</div><h4>《默视》获戛纳评审团大奖</h4><p>导演陈默的第三部长片，讲一个聋哑父亲替女儿寻找真相的 72 小时。全片只有 11 句对白，靠手语与雨声推进。评审团主席评价："它让我们重新学会看。"</p><div class="tag"><span>戛纳</span><b>·</b><span>华语</span><b>·</b><span>12+</span></div></article>
+      <article class="fd" tabindex="0"><div class="no">№ 0148</div><h4>小津安二郎《东京物语》4K 修复版内地定档</h4><p>修复自 1953 年原始底片，耗时 14 个月。首周仅 12 城艺联专线，票价 40 元。建议：<b>别看手机，去看大银幕</b>——榻榻米仰角的呼吸感，是手机给不了的。</p><div class="tag"><span>4K 修复</span><b>·</b><span>日本</span><b>·</b><span>12+</span></div></article>
+      <article class="fd" tabindex="0"><div class="no">№ 0147</div><h4>釜山电影节公布"亚洲电影贡献奖"</h4><p>授予韩国剪辑师李美珠，代表作《寄生虫》《燃烧》。这是该奖首次颁给幕后工种。评委说："剪辑是电影的良心。"</p><div class="tag"><span>釜山</span><b>·</b><span>韩国</span><b>·</b><span>幕后</span></div></article>
+      <article class="fd" tabindex="0"><div class="no">№ 0146</div><h4>《秋日来信》宣布撤档</h4><p>原定 10 月 25 日上映，制片方仅称"档期不合适"。业内传因同期强片过多。我的看法：<b>好片不怕改档，怕的是改了还不敢上映</b>。</p><div class="tag"><span>华语</span><b>·</b><span>档期</span><b>·</b><span>15+</span></div></article>
+      <article class="fd" tabindex="0"><div class="no">№ 0145</div><h4>伊朗《苹果树下》获东京电影节最佳影片</h4><p>导演玛尔詹·萨特拉皮式的新人，全片在德黑兰南部一条巷子拍完，演员全是邻居。票房仅 3 万里亚尔（约合 5 元人民币）。<b>电影还在，只是我们看不见。</b></p><div class="tag"><span>东京</span><b>·</b><span>伊朗</span><b>·</b><span>15+</span></div></article>
+      <article class="fd" tabindex="0"><div class="no">№ 0144</div><h4>是枝裕和新片开机</h4><p>片名暂定《海边的对话》，役所广司、长泽雅美主演，2027 年戛纳竞赛目标。剧本写了 4 年，"写的是我父亲去世后，我才听懂的那些话"。</p><div class="tag"><span>日本</span><b>·</b><span>导演</span><b>·</b><span>12+</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="now" style="background:linear-gradient(180deg,transparent,rgba(47,122,108,.1))" aria-labelledby="t-now">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>02</i>新片速递</h2><span class="en">Now Showing</span></div>
+        <p class="ss">正在或即将在亚洲院线上映的新片。每条都写<b>值不值得买票</b>、<b>适合和谁看</b>、<b>雷点</b>。</p>
+      </div>
+      <a class="chip" href="#">0149 部片单全表 ›</a>
+    </div>
+    <div class="cards">
+      <article class="cd" tabindex="0">
+        <div class="cv"><span class="ct">华语 · 11.08</span><span class="sc">96</span></div>
+        <div class="bd"><h4>《默视》</h4><p class="mi">聋哑父亲替女儿寻真相的 72 小时。全片 11 句对白，靠手语与雨声推进。看完想鼓掌，但影院很安静。</p><div class="ft"><span>戛纳 · 评审团大奖</span><b>148′</b></div></div>
+      </article>
+      <article class="cd" tabindex="0">
+        <div class="cv"><span class="ct">日本 · 修复</span><span class="sc">98</span></div>
+        <div class="bd"><h4>《东京物语》4K</h4><p class="mi">小津安二郎 1953 年。父母去东京看儿女，儿女都很忙。原节子那场车站送别，是全片最安静的 40 秒。</p><div class="ft"><span>4K 修复 · 艺联专线</span><b>136′</b></div></div>
+      </article>
+      <article class="cd" tabindex="0">
+        <div class="cv"><span class="ct">韩国 · 12.20</span><span class="sc">93</span></div>
+        <div class="bd"><h4>《冬泳》</h4><p class="mi">三个女人在汉江冬泳，聊婚姻、聊钱、聊那个没回来的男人。李沧东监制，新人导演首作。</p><div class="ft"><span>女性 · 伦理</span><b>112′</b></div></div>
+      </article>
+      <article class="cd" tabindex="0">
+        <div class="cv"><span class="ct">伊朗 · 待定</span><span class="sc">95</span></div>
+        <div class="bd"><h4>《苹果树下》</h4><p class="mi">德黑兰南部一条巷子，演员全是邻居。孩子问"苹果为什么会掉下来"，大人答不上来。</p><div class="ft"><span>东京 · 最佳影片</span><b>88′</b></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="cal" aria-labelledby="t-cal">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>03</i>节展日历</h2><span class="en">Festival Desk</span></div>
+        <p class="ss">六个亚洲电影人绕不开的电影节。进度条 = 距开幕还有多少天（以 30 天为满）。</p>
+      </div>
+      <a class="chip" href="#">订阅日历 ics ›</a>
+    </div>
+    <div class="cal">
+      <div class="day"><div class="d">13</div><div class="m">MAY · 戛纳</div><h4>戛纳电影节</h4><p>竞赛单元亚洲片 4 部，为近五年最多。主竞赛评委含是枝裕和。</p><div class="st2"><i style="width:77%"></i></div></div>
+      <div class="day"><div class="d">07</div><div class="m">FEB · 柏林</div><h4>柏林电影节</h4><p>论坛单元新增"亚洲新声"单元，12 部处女作，含 3 部华语。</p><div class="st2"><i style="width:23%"></i></div></div>
+      <div class="day"><div class="d">27</div><div class="m">AUG · 威尼斯</div><h4>威尼斯电影节</h4><p>地平线单元青睐亚洲类型片。《冬泳》已入围，争处女作奖。</p><div class="st2"><i style="width:90%"></i></div></div>
+      <div class="day"><div class="d">02</div><div class="m">OCT · 釜山</div><h4>釜山电影节</h4><p>亚洲电影的贡献奖，今年颁给剪辑师。市场单元中国买家最多。</p><div class="st2"><i style="width:7%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="auteur" style="background:linear-gradient(0deg,transparent,rgba(200,67,59,.06))" aria-labelledby="t-au">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>04</i>导演速写</h2><span class="en">Auteur Tape</span></div>
+        <p class="ss">按<b>作者</b>追片，是最快的上手路径。左右滑动看全部。</p>
+      </div>
+      <a class="chip" href="#">导演全集索引 ›</a>
+    </div>
+    <div class="tape">
+      <article class="au" tabindex="0"><div class="av"></div><h4>陈默</h4><div class="ct">华语 · 1986</div><p>前纪录片导演。《默视》是其剧情长片第三部，把"看不见"拍成了美学：聋哑父亲的视角，是全片最锋利的刀。</p><span class="fl">必看：<b>《默视》《雨声》《第七天》</b></span></article>
+      <article class="au" tabindex="0"><div class="av"></div><h4>小津安二郎</h4><div class="ct">日本 · 1903–1963</div><p>榻榻米上的仰角，是最残忍的视角。子女长大，父母变老，没有坏人。</p><span class="fl">必看：<b>《东京物语》《晚春》《秋刀鱼之味》</b></span></article>
+      <article class="au" tabindex="0"><div class="av"></div><h4>李沧东</h4><div class="ct">韩国 · 1954</div><p>从小说家到导演。镜头永远对准"被剩下的人"。《燃烧》的 greenhouse，是全片最安静、也最响的隐喻。</p><span class="fl">必看：<b>《燃烧》《密阳》《绿洲》</b></span></article>
+      <article class="au" tabindex="0"><div class="av"></div><h4>玛尔詹·萨特拉皮</h4><div class="ct">伊朗 · 1969</div><p>漫画作者转导演。《我在伊朗长大》之后，她把镜头对准了德黑兰南部的巷子。</p><span class="fl">必看：<b>《苹果树下》《一千零一夜》《母鸡》</b></span></article>
+      <article class="au" tabindex="0"><div class="av"></div><h4>是枝裕和</h4><div class="ct">日本 · 1962</div><p>拍"不在场的人"。《海街日记》的梅子酒、《步履不停》的章鱼、新片《海边的对话》。</p><span class="fl">必看：<b>《步履不停》《海街日记》《小偷家族》</b></span></article>
+      <article class="au" tabindex="0"><div class="av"></div><h4>杜琪峰</h4><div class="ct">中国香港 · 1955</div><p>香港电影最后的作者。《枪火》用 84 分钟证明：枪战可以很静，兄弟可以很短。</p><span class="fl">必看：<b>《枪火》《暗花》《PTU》</b></span></article>
+    </div>
+  </div>
+</section>
+
+<section id="long" aria-labelledby="t-long">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>05</i>深度影评</h2><span class="en">Long Read</span></div>
+        <p class="ss">慢一点的文字。映后 72 小时内成文，允许有偏见，但必须有依据。</p>
+      </div>
+      <span class="chip">READ · 0149 字</span>
+    </div>
+    <article class="paper">
+      <div class="sub">LONG READ · 0149 WORDS · 华语 · 12+</div>
+      <h3>《默视》：当电影学会闭嘴，我们才真正开始看</h3>
+      <p>陈默的《默视》只有 11 句对白。这个数字，我在片尾字幕亮起时数了第二遍。它讲的其实不是"聋哑人如何生活"，而是"我们这些能听见的人，到底在听什么"。</p>
+      <p>父亲老周在女儿失踪后的 72 小时里，走遍了整座城市。他问路、问监控、问一个便利店店员——所有人都对他说话，但没有一个人真的在<b>回答</b>。这是全片最痛的地方：语言的丰盛，恰恰是倾听的匮乏。</p>
+      <blockquote>"我不是听不见，我是没有人愿意被我听见。"——老周用手语说这句话时，镜头停在她的手上，停了 6 秒。</blockquote>
+      <p>技术上值得一说的是声音设计。影片没有配乐，只有三种声音：雨、地铁报站、以及一种极低频的嗡鸣——后期用 40Hz 正弦波模拟"耳鸣"。影院的低音炮让前排观众皱眉，但正是这种<b>生理性的不适</b>，把"听见"这件事还给了观众。</p>
+      <p>我给 96 分，扣 4 分只因最后 8 分钟。导演让老周在雨里笑了一次，太用力了。前面 140 分钟的克制，不该被一个"治愈"的句号收掉。真正的和解不是笑，是那个没有说完的手势。</p>
+      <p>建议：带一位愿意陪你沉默的人去看。别带爆米花。看完不要立刻说话，走两站路。</p>
+      <div class="by">— 0149 导航 · 电影编辑部 / 2026.10.07 / 映后第 3 天</div>
+    </article>
+  </div>
+</section>
+
+<section id="pick" aria-labelledby="t-pick">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <div class="shl"><h2 class="st"><i>06</i>本周片单</h2><span class="en">Hall 0149</span></div>
+        <p class="ss">一个主题，四部片，一条观看顺序。每周五更新，可订阅邮件周报。</p>
+      </div>
+      <a class="chip" href="#">订阅周报 ›</a>
+    </div>
+    <div class="fold">
+      <div class="fm">
+        <div>
+          <div class="kv">WEEK 41 · THEME</div>
+          <h4>「被剩下的人」<br>—— 当亲缘关系退场之后</h4>
+          <p>四部片，四个"被剩下"的瞬间：父母被儿女剩下、妻子被丈夫剩下、孩子被大人剩下、一个人被整座城市剩下。看完你会想给家里打个电话。</p>
+        </div>
+        <div class="kv">建议时长 6h22′ ｜ 顺序不可打乱</div>
+      </div>
+      <div class="fr">
+        <div class="fl2"><span class="no">1</span><div><h5>《东京物语》</h5><div class="mi">小津安二郎 · 1953 · 日本 · 136′</div></div><span class="sc">98</span></div>
+        <div class="fl2"><span class="no">2</span><div><h5>《步履不停》</h5><div class="mi">是枝裕和 · 2008 · 日本 · 115′</div></div><span class="sc">95</span></div>
+        <div class="fl2"><span class="no">3</span><div><h5>《密阳》</h5><div class="mi">李沧东 · 2007 · 韩国 · 142′</div></div><span class="sc">94</span></div>
+        <div class="fl2"><span class="no">4</span><div><h5>《默视》</h5><div class="mi">陈默 · 2026 · 华语 · 148′</div></div><span class="sc">96</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="about">
+  <div class="wrap">
+    <div class="fg">
+      <div class="fc">
+        <div class="logo" style="font-size:17px"><span class="flash" aria-hidden="true"></span>亚洲快播电影网<small>0149 导航 · 亚洲电影快讯</small></div>
+        <p class="about"><b>亚洲快播电影网</b>（yazhoukuaibodianyingwang-cn.github.io）是 <b>0149 导航</b> 旗下<b>亚洲电影快讯频道</b>：快速播报亚洲新片、电影节、4K 修复与导演动态。覆盖<b>华语、日本、韩国、伊朗、东南亚</b>五条脉络，含快讯流、新片速递、节展日历、导演速写、深度影评与本周片单。本站倡导<b>正版观看</b>：<b>不做资源站、不挂盗链、不引导下载</b>，所有影片均建议通过电影院及合法授权平台观看。"快播"在此意为<b>快速播报</b>，非其他含义；"0149"是本站自建的电影情绪标签体系，非官方分类，亦非任何第三方评分机构。</p>
+      </div>
+      <div class="fc"><h5>快讯</h5><a href="#feed">快讯流</a><a href="#feed">2 小时快讯</a><a href="#feed">映后 72 小时</a><a href="#cal">节展日历</a><a href="#">邮件订阅</a></div>
+      <div class="fc"><h5>栏目</h5><a href="#now">新片速递</a><a href="#auteur">导演速写</a><a href="#long">深度影评</a><a href="#pick">本周片单</a><a href="#about">快播评分法</a></div>
+      <div class="fc"><h5>关于</h5><a href="#about">"快播"是什么</a><a href="#">分级说明</a><a href="#">片单投稿</a><a href="#">版权与联系</a><a href="#">RSS / 订阅</a></div>
+    </div>
+    <div class="copy">
+      网站名称：<b>亚洲快播电影网</b> ｜ 网站网址：<a href="https://yazhoukuaibodianyingwang-cn.github.io">https://yazhoukuaibodianyingwang-cn.github.io</a> ｜ 频道归属：<a href="https://vryfuby.cn">0149 导航</a> ｜ © 2024–2026 保留所有权利<br>
+      本站仅为影视信息与观影索引服务，<b>不提供任何影视资源下载与在线播放</b>。请通过电影院及合法授权平台观看。严禁镜像、搬运与转载本站原创内容。
+    </div>
+  </div>
+</footer>
+
+<a class="up" id="up" href="#top" aria-label="回到顶部">↑</a>
+
+<script>
+var togg=document.getElementById('togg'),links=document.getElementById('links');
+togg.addEventListener('click',function(){
+  var o=links.classList.toggle('open');
+  togg.setAttribute('aria-expanded',o);togg.textContent=o?'✕':'☰';
+});
+links.addEventListener('click',function(e){
+  if(e.target.tagName==='A'){links.classList.remove('open');togg.setAttribute('aria-expanded','false');togg.textContent='☰';}
+});
+var up=document.getElementById('up');
+window.addEventListener('scroll',function(){up.classList[window.scrollY>500?'add':'remove']('show');});
+</script>
+</body>
+</html>
